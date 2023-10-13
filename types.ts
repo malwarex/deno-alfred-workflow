@@ -22,7 +22,7 @@ export interface ScriptFilterItem {
   autocomplete?: string;
   type?: "default" | "file" | "file:skipcheck";
   mods?: {
-    [K in Mods]: {
+    [K in Mods]+?: {
       valid: boolean;
       arg: string;
       subtitle: string;
